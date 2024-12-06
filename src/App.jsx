@@ -13,7 +13,7 @@ function App() {
       <Text as="p" className="subtitle">
         Quel est votre nom?
       </Text>
-      <Input type="text" placeholder="Enter your name" value={name} onChange={(e) => setName(e.target.value)} className="input" id="input" />
+      <Input type="text" placeholder="Enter your name" value={text} onChange={(e) => setText(e.target.value)} className="input" id="input" />
     </>
   )
 }
