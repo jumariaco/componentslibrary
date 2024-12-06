@@ -1,12 +1,17 @@
 import { useState } from 'react'
 import './App.css'
 import Input from './Components/input'
+import TextArea from './Components/textArea'
 
 function App() {
-  const [name, setName] = useState('')
+  const [text, setText] = useState('')
   return (
     <>
-      <Input type="text" placeholder="Enter your name" value={name} onChange={(e) => setName(e.target.value)} className="input" id="input" />
+      <Input type="text" placeholder="Enter your name" value={text} onChange={(e) => setText(e.target.value)} className="input" id="input" />
+      <TextArea className="textarea" id="textarea" name="textarea" rows={10} cols={30}>
+        entrer votre message {text}
+      </TextArea>
+      <p>Ton text est null :  {text}</p>
     </>
   )
 }
