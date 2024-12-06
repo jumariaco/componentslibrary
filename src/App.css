@@ -40,3 +40,15 @@
 .read-the-docs {
   color: #888;
 }
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  text-align: center;
+}
