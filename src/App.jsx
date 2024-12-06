@@ -2,7 +2,8 @@ import { useState } from "react";
 import "./App.css";
 import Input from "./Components/input";
 import Text from "./Components/text";
-import Bienvenue from "./Page/bienvenue";
+import QuestionNumber from "./Page/questionNumber";
+import Button from "./Components/Button";
 
 function App() {
   const [text, setText] = useState("");
@@ -10,7 +11,7 @@ function App() {
   return (
     <>
       {bienvenue ? (
-        <Bienvenue />
+        <QuestionNumber name={text} />
       ) : (
         <>
           <Text as="h1" className="title">
@@ -27,7 +28,7 @@ function App() {
             className="input"
             id="input"
           />
-          <button onClick={() => setBienvenue(true)}>voir la page</button>
+          <Button onClick={() => setBienvenue(true)} label="suivant" background_color="blue" />
         </>
       )}
     </>
